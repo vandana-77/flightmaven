@@ -44,16 +44,20 @@ public class Flight {
 			//Map map;
 			switch(ch)
 			{
-				case 1:
-					System.out.println("Enter Flight Number");
+				case 1:int flag=1;
+					while(flag==1)
+					{
+					 System.out.println("Enter Flight Number");
 					//flightNumber=s.next();
-					try{
+					 try{
 						flightNumber=Integer.valueOf(s.next());
-					}
-					catch(NumberFormatException e)
-   					 {
+					    }
+					  catch(NumberFormatException e)
+   					   {
+						  flag=0;
        					     System.out.println("Flight number must contain only digits.please enter a valid flight number ");
-    					   }
+    					    }
+					}		
 					System.out.println("Enter Flight Model");
 					flightModel=s.next();
 					System.out.println("Enter Carrier Name");
