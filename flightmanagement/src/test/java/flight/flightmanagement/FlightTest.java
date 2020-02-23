@@ -31,7 +31,7 @@ public class FlightTest {
 	}
 	
 	@Test
-	void test() throws Exception
+	void test()
 	{
 		FlightDTO dt=new FlightDTO();
 		d.addFlight(dt);
