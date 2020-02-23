@@ -79,12 +79,12 @@ public  class FlightDAOImpl implements FlightDao {
     	  }
     	  return null;
       }
-	/*
-	 * public java.util.List<Object> listFlight() throws Exception {
-	 * 
-	 * Collection<FlightDTO> collection = hm.values(); java.util.List<Object> list =
-	 * new ArrayList<Object>(); for(FlightDTO a : collection) list.add(a); return
-	 * list; }
-	 */
+	public Collection<FlightDTO> listFlight()
+          {
+             Collection<FlightDTO> list=new ArrayList<FlightDTO>();
+             list=hm.values();
+             return list;
+	
       }
 
+}
