@@ -46,7 +46,14 @@ public class Flight {
 			{
 				case 1:
 					System.out.println("Enter Flight Number");
-					flightNumber=s.nextInt();
+					//flightNumber=s.next();
+					try{
+						flightNumber=Integer.valueOf(s.next());
+					}
+					catch(NumberFormatException e)
+   					 {
+       					     System.out.println("Flight number must contain only digits.please enter a valid flight number ");
+    					   }
 					System.out.println("Enter Flight Model");
 					flightModel=s.next();
 					System.out.println("Enter Carrier Name");
