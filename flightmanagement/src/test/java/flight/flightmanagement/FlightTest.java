@@ -39,7 +39,7 @@ public class FlightTest {
 		dt.setFlightModel("indigo");
 		dt.setCarrierName("vandy");
 		dt.setSeatCapacity(56);
-		List<Object> l=d.listFlight();
+		List<FlightDTO> l=d.listFlight();
       		assertEquals(1,l.size());
 	}
 
